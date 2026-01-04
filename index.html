@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZamZam Fast Food - Premium Fast Food Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>ZamZam<span>Fast Food</span></h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#offers" class="nav-link">Offers</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="https://www.tiktok.com/@zam.zam.fast.food3" target="_blank" class="tiktok-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">ZamZam Fast Food</h1>
+                <p class="hero-tagline fade-in" data-delay="0.2s">Premium Quality • Fresh Ingredients • Delicious Taste</p>
+                <div class="hero-btns fade-in" data-delay="0.4s">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#offers" class="btn btn-outline">Special Offers</a>
+                </div>
+            </div>
+            <div class="hero-image slide-up" data-delay="0.6s">
+                <div class="food-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div id="about-text-content">
+                        <!-- About text will be loaded from data.json -->
+                        Loading about information...
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Menu Items</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Delicious fast food made fresh daily</p>
+            <div id="menu-items" class="menu-grid">
+                <!-- Menu items will be loaded from data.json -->
+                <div class="loading">Loading menu items...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="section offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <p class="section-subtitle">Exclusive deals for our valued customers</p>
+            
+            <!-- Offer Category Tabs -->
+            <div class="offer-tabs">
+                <button class="offer-tab active" data-category="student">Student Offers</button>
+                <button class="offer-tab" data-category="family">Family Offers</button>
+                <button class="offer-tab" data-category="special">Special Offers</button>
+            </div>
+            
+            <!-- Offers Content -->
+            <div id="offers-content">
+                <!-- Offers will be loaded from data.json -->
+                <div class="loading">Loading offers...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone Number</h3>
+                            <p id="contact-phone">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p id="contact-location">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Opening Hours</h3>
+                            <p id="contact-hours">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-frame">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>ZamZam Fast Food Location</p>
+                        <small>Interactive map would appear here</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>ZamZam<span>Fast Food</span></h2>
+                    <p>Premium fast food experience since 2019</p>
+                </div>
+                <div class="footer-social">
+                    <p>Follow us on TikTok</p>
+                    <a href="https://www.tiktok.com/@zam.zam.fast.food3" target="_blank" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#offers">Offers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ZamZam Fast Food. All rights reserved. | <a href="admin.php" class="admin-link">Admin Panel</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
